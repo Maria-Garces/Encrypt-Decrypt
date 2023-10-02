@@ -149,45 +149,7 @@ int main(){
 				
 				}
 				system("cls");
-				/*printf("\n\nIngrese la matriz de orden 3x3 con la que se encripto el texto:\n\n");
-				printf("\n");
-			//Agregar verificacion de si la matriz tiene inversa, si no pedirla de nuevo.	
 				
-			do{
-				
-				for(i=0; i<3; i++){
-					for(j=0; j<3; j++){
-						
-						do{
-						
-							printf("Ingrese el elemento de la fila %d, columna %d de la matriz: ", i+1, j+1);
-							fgets(validar_numero, 5, stdin);
-							fflush(stdin);
-							longitud=strlen(validar_numero);
-							QuitarNuevaLinea(validar_numero, longitud);
-							numero_valido=ValidarNegativo(validar_numero, longitud-1);
-							
-							if(numero_valido==0){
-								matriz_usuario[i][j]=atoi(validar_numero);
-							}
-							
-						}while(numero_valido==1);
-						
-					}
-				}
-				
-				determinante=Determinante(matriz_usuario, 3);
-					
-				if(determinante==0){
-					textcolor(RED); printf("\n\n[!] "); textcolor(WHITE);
-					printf("La matriz ingresada no es valida, pues no tiene inversa.");
-					printf("\nPor favor ingrese una matriz invertible.\n\n");
-					system("pause");
-				}
-				
-				system("cls");
-			
-			}while(determinante==0);*/
 			
 			determinante=Determinante(m, 3);
 				
